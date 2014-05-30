@@ -1,0 +1,66 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+		<GridView
+		    android:id="@+id/gridView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+		    android:background="@drawable/bg1"
+		    android:columnWidth="60dp"
+		    android:gravity="center"
+		    android:horizontalSpacing="5dp"
+		    android:numColumns="auto_fit"
+		    android:padding="@dimen/number_image_margin"
+		    android:stretchMode="columnWidth"
+		    android:verticalSpacing="5dp" >
+
+   		</GridView>
+
+   		<TableRow
+   		    android:id="@+id/tableRow2"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:gravity="center" >
+
+   			<TextView
+   			    android:id="@+id/textView2"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:gravity="center"
+   			    android:text="@string/select_your_box"
+   			    android:layout_weight="1"  />
+
+   			<ImageView
+   			    android:id="@+id/image_briefcase"
+   			    android:layout_width="fill_parent"
+   			    android:layout_height="fill_parent"
+   			    android:layout_marginRight="10dp"
+   			    android:scaleType="centerInside"/>
+
+        </TableRow>
+       	<GridView
+       	    android:id="@+id/gridView2"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_weight="2"
+       	    android:background="@drawable/bg1"
+       	    android:columnWidth="60dp"
+       	    android:gravity="center"
+       	    android:horizontalSpacing="5dp"
+       	    android:numColumns="auto_fit"
+       	    android:padding="@dimen/doller_image_margin"
+       	    android:stretchMode="columnWidth"
+       	    android:verticalSpacing="5dp" >
+
+   		</GridView>   		                     
+</TableLayout>
